@@ -1,7 +1,7 @@
 package main.java.pl.edu.pjatk.mmopet.service;
 
 import main.java.pl.edu.pjatk.mmopet.domain.models.Model;
-import main.java.pl.edu.pjatk.mmopet.service.exceptions.ModelDoesNotExistException;
+import main.java.pl.edu.pjatk.mmopet.service.exceptions.ObjectDoesNotExistException;
 import main.java.pl.edu.pjatk.mmopet.service.exceptions.ObjectAlreadyExistException;
 
 import java.util.List;
@@ -26,10 +26,10 @@ public class Database {
         return this.collection.get(id);
     }
 
-    public void update(Model model) throws ModelDoesNotExistException {
+    public void update(Model model) throws ObjectDoesNotExistException {
         int modelId = model.getId();
         if (this.collection.get(modelId) == null) {
-            throw new ModelDoesNotExistException();
+            throw new ObjectDoesNotExistException();
         }
         this.collection.set(modelId, model);
     }
