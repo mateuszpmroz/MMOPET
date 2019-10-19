@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="mmopetGame" target="1.5" />
+      <module name="mmopetGame" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
