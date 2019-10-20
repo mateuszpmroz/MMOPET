@@ -1,6 +1,6 @@
 package pl.mroz.tau.mmopet.domain.models;
 
-public class Champion implements Model {
+public class Champion extends BaseModel implements Model {
     private int id;
     private String name;
 

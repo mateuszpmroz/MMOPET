@@ -3,7 +3,6 @@ package pl.mroz.tau.mmopet.service;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import pl.mroz.tau.mmopet.domain.models.Champion;
-import pl.mroz.tau.mmopet.domain.models.Pet;
 import pl.mroz.tau.mmopet.manager.DatabaseManager;
 import pl.mroz.tau.mmopet.service.exceptions.ObjectAlreadyExistException;
 import pl.mroz.tau.mmopet.service.exceptions.ObjectDoesNotExistException;
