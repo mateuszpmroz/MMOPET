@@ -42,6 +42,6 @@ public class DatabaseManagerTest {
         Mockito.when(dateMock.getTime()).thenReturn(readedAt);
         Champion champion = new Champion(0);
         champion.setReadedAt(dateMock.getTime());
-        assertEquals(readedAt, champion.updatedAt);
+        assertEquals(readedAt, champion.readedAt);
     }
 }

@@ -17,4 +17,8 @@ public class BaseModel {
     public void setUpdatedAt(Long time) {
         this.updatedAt = time;
     }
+
+    public void setReadedAt(Long time) {
+        this.readedAt = time;
+    }
 }
