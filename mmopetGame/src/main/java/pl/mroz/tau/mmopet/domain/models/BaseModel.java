@@ -9,4 +9,8 @@ public class BaseModel {
 
     public BaseModel() {
     }
+
+    public void setCreatedAt(Long time) {
+        this.createdAt = time;
+    }
 }
