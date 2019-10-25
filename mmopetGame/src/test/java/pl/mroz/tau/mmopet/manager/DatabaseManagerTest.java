@@ -34,4 +34,14 @@ public class DatabaseManagerTest {
         champion.setUpdatedAt(dateMock.getTime());
         assertEquals(updatedAt, champion.updatedAt);
     }
+
+    @org.junit.jupiter.api.Test
+    public void setsReadedAtDateOnObjectReadInDb() throws ObjectAlreadyExistException {
+        long readedAt = 30L;
+        Date dateMock = Mockito.mock(Date.class);
+        Mockito.when(dateMock.getTime()).thenReturn(readedAt);
+        Champion champion = new Champion(0);
+        champion.setReadedAt(dateMock.getTime());
+        assertEquals(readedAt, champion.updatedAt);
+    }
 }
