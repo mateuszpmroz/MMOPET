@@ -15,7 +15,7 @@ class BaseModelTest {
     @org.junit.jupiter.api.Test
     void doesNotSetUpdatedAtAndReadedAt() {
         this.baseModel = new BaseModel();
-        assertNull(this.baseModel.updatedAt);
-        assertNull(this.baseModel.readedAt);
+        assertEquals(this.baseModel.updatedAt, 0);
+        assertEquals(this.baseModel.readedAt, 0);
     }
 }
