@@ -13,4 +13,8 @@ public class BaseModel {
     public void setCreatedAt(Long time) {
         this.createdAt = time;
     }
+
+    public void setUpdatedAt(Long time) {
+        this.updatedAt = time;
+    }
 }
