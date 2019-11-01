@@ -5,6 +5,7 @@ import pl.mroz.tau.mmopet.service.exceptions.ObjectDoesNotExistException;
 import pl.mroz.tau.mmopet.service.exceptions.ObjectAlreadyExistException;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class DatabaseManager {
@@ -12,6 +13,15 @@ public class DatabaseManager {
 
     public DatabaseManager() {
         this.collection = new ArrayList<Model>();
+    }
+
+    public enum Datetime {
+        CREATED_AT(true), UPDATED_AT(true), READED_AT(true);
+        boolean isEnabled;
+
+        Datetime(boolean b) {
+            isEnabled = b;
+        }
     }
 
     public void create(Model model) throws ObjectAlreadyExistException {
@@ -22,6 +32,10 @@ public class DatabaseManager {
                 }
             }
         }
+        if (Datetime.CREATED_AT.isEnabled) {
+            Date date = new Date();
+            model.setCreatedAt(date.getTime());
+        }
         this.collection.add(model);
     }
 
@@ -30,6 +44,11 @@ public class DatabaseManager {
     }
 
     public Model read(int id) {
+        Model model = this.collection.get(id);
+        if (Datetime.READED_AT.isEnabled) {
+            Date date = new Date();
+            model.setReadedAt(date.getTime());
+        }
         return this.collection.get(id);
     }
 
@@ -39,6 +58,11 @@ public class DatabaseManager {
             this.collection.get(modelId);
         } catch ( IndexOutOfBoundsException e ) {
             throw new ObjectDoesNotExistException();
+        }
+
+        if (Datetime.UPDATED_AT.isEnabled) {
+            Date date = new Date();
+            model.setUpdatedAt(date.getTime());
         }
         this.collection.set(modelId, model);
     }

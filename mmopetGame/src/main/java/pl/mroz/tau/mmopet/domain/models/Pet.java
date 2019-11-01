@@ -1,6 +1,6 @@
 package pl.mroz.tau.mmopet.domain.models;
 
-public class Pet implements Model {
+public class Pet extends BaseModel implements Model {
     private int id;
 
     public Pet(int id) {

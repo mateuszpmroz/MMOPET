@@ -1,6 +1,6 @@
 package pl.mroz.tau.mmopet.domain.models;
 
-public class Weapon implements Model {
+public class Weapon extends BaseModel implements Model {
     private int id;
 
     public Weapon(int id) {
