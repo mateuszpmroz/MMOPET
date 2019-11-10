@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public class ChampionServiceImpl implements ChampionService {
     private DatabaseManager databaseManager;
 
-    ChampionServiceImpl(DatabaseManager databaseManager) {
+    public ChampionServiceImpl(DatabaseManager databaseManager) {
         this.databaseManager = databaseManager;
     }
 

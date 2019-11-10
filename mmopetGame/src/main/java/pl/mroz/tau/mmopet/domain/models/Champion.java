@@ -1,8 +1,11 @@
 package pl.mroz.tau.mmopet.domain.models;
 
+import java.util.List;
+
 public class Champion extends BaseModel implements Model {
     private int id;
     private String name;
+    private List<Integer> friendList;
 
     public Champion(int id) {
         this.id = id;
@@ -19,5 +22,13 @@ public class Champion extends BaseModel implements Model {
 
     public String getName() {
         return this.name;
+    }
+
+    public void addFriendToFriendList(int id) {
+        this.friendList.add(id);
+    }
+
+    public List<Integer> getFriendList() {
+        return this.friendList;
     }
 }

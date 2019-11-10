@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 public class ChampionRepository {
     private ChampionService championService;
 
-    ChampionRepository(ChampionService championService) {
+    public ChampionRepository(ChampionService championService) {
         this.championService = championService;
     }
 

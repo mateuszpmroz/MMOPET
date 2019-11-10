@@ -1,0 +1,16 @@
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/service/PetService.java
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/domain/models/Pet.java
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/App.java
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/domain/models/Weapon.java
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/service/ChampionServiceImpl.java
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/domain/models/BaseModel.java
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/domain/models/Model.java
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/repository/ChampionRepository.java
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/service/WeaponServiceImpl.java
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/domain/models/Champion.java
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/service/exceptions/ObjectDoesNotExistException.java
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/service/exceptions/ObjectAlreadyExistException.java
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/manager/DatabaseManager.java
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/manager/Manager.java
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/service/ChampionService.java
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/service/PetServiceImpl.java
