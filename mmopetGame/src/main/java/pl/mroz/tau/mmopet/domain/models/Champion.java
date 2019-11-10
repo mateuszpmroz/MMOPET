@@ -1,5 +1,6 @@
 package pl.mroz.tau.mmopet.domain.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Champion extends BaseModel implements Model {
@@ -8,6 +9,7 @@ public class Champion extends BaseModel implements Model {
     private List<Integer> friendList;
 
     public Champion(int id) {
+        this.friendList = new ArrayList<Integer>();
         this.id = id;
     }
 

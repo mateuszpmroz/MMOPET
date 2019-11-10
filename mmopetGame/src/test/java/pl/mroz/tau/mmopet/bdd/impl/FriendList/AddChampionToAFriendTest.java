@@ -14,7 +14,7 @@ import pl.mroz.tau.mmopet.service.exceptions.ObjectAlreadyExistException;
 
 import static org.junit.Assert.*;
 
-public class AddChampionToAFriend {
+public class AddChampionToAFriendTest {
     private Champion champion;
     private Champion friendChampion;
     private ChampionRepository championRepository;
