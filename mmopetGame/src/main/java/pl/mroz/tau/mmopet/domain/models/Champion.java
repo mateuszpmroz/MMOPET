@@ -26,7 +26,10 @@ public class Champion extends BaseModel implements Model {
         return this.name;
     }
 
-    public void addFriendToFriendList(int id) {
+    public void addFriendToFriendList(int id) throws Exception {
+        if (this.friendList.contains(id)) {
+            throw new Exception("This friend already exist on your friends list.");
+        }
         this.friendList.add(id);
     }
 

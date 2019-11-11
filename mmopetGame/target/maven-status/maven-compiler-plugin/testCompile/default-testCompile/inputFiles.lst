@@ -1,6 +1,6 @@
 /mnt/d/Programowanie/MMOPET/mmopetGame/src/test/java/pl/mroz/tau/mmopet/AppTest.java
 /mnt/d/Programowanie/MMOPET/mmopetGame/src/test/java/pl/mroz/tau/mmopet/bdd/impl/FriendList/AddChampionToAFriendTest.java
-/mnt/d/Programowanie/MMOPET/mmopetGame/src/test/java/hellocucumber/RunCucumberTest.java
 /mnt/d/Programowanie/MMOPET/mmopetGame/src/test/java/pl/mroz/tau/mmopet/models/BaseModelTest.java
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/test/java/runner/RunCucumberTest.java
 /mnt/d/Programowanie/MMOPET/mmopetGame/src/test/java/pl/mroz/tau/mmopet/manager/DatabaseManagerTest.java
 /mnt/d/Programowanie/MMOPET/mmopetGame/src/test/java/pl/mroz/tau/mmopet/service/ChampionServiceImplTest.java

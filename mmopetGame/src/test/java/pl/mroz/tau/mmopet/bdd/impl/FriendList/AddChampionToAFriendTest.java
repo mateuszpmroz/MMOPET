@@ -20,6 +20,7 @@ public class AddChampionToAFriendTest {
     private ChampionRepository championRepository;
     private ChampionService championService;
     private DatabaseManager databaseManager;
+    private Champion searchedFriend;
 
     @Given("^I am logged as a champion$")
     public void iAmLoggedAsAChampion() throws ObjectAlreadyExistException {
@@ -34,19 +35,35 @@ public class AddChampionToAFriendTest {
         this.championService.create(this.friendChampion);
     }
 
-    @And("^I don't have a friend on a friend list$")
-    public void iDonTHaveAFriendOnAFriendList() {
+    @And("^I don't have a friend on a friends list$")
+    public void iDonTHaveAFriendOnAFriendsList() {
         assertFalse(this.champion.getFriendList().contains(this.friendChampion.getId()));
     }
 
-    @When("^I search for a \"([^\"]*)\" on add friend list search box and add as a friend$")
-    public void iSearchForAOnAddFriendListSearchBox(String name) {
-        Champion searchedFriend = this.championRepository.getChampionsByNameRegex(name).get(0);
-        this.champion.addFriendToFriendList(searchedFriend.getId());
+    @When("^I search for a \"([^\"]*)\" on add friends list search box$")
+    public void iSearchForAOnAddFriendsListSearchBox(String name) {
+        this.searchedFriend = this.championRepository.getChampionsByNameRegex(name).get(0);
     }
 
-    @Then("^I should have a new friend on a friend list$")
-    public void iShouldHaveAOnAFriendList() {
+    @Then("^I should have a new friend on a friends list$")
+    public void iShouldHaveAOnAFriendsList() {
         assertTrue(this.champion.getFriendList().contains(this.friendChampion.getId()));
+    }
+
+    @And("^I add champion as a friend$")
+    public void iAddChampionAsAFriend() throws Exception {
+        this.champion.addFriendToFriendList(this.searchedFriend.getId());
+    }
+
+    @And("^I have a friend on a friends list$")
+    public void iHaveAFriendOnAFriendList() throws Exception {
+        this.champion.addFriendToFriendList(this.friendChampion.getId());
+    }
+
+    @Then("^I should got an error when add existing friend as a friend$")
+    public void iShouldGotAnErrorWhenAddExistingFriendAsAFriend() throws Exception {
+        assertThrows(Exception.class, () -> {
+            this.champion.addFriendToFriendList(this.friendChampion.getId());
+        });
     }
 }
