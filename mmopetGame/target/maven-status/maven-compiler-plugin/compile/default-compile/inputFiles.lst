@@ -1,4 +1,7 @@
 /mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/service/PetService.java
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/configuration/RestInitializer.java
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/configuration/RestConfiguration.java
+/mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/web/ChampionApi.java
 /mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/domain/models/Pet.java
 /mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/App.java
 /mnt/d/Programowanie/MMOPET/mmopetGame/src/main/java/pl/mroz/tau/mmopet/domain/models/Weapon.java

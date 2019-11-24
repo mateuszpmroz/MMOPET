@@ -6,6 +6,7 @@ pl/mroz/tau/mmopet/domain/models/BaseModel.class
 pl/mroz/tau/mmopet/manager/DatabaseManager$Datetime.class
 pl/mroz/tau/mmopet/service/WeaponServiceImpl.class
 pl/mroz/tau/mmopet/service/ChampionServiceImpl.class
+pl/mroz/tau/mmopet/configuration/RestConfiguration.class
 pl/mroz/tau/mmopet/domain/models/Pet.class
 pl/mroz/tau/mmopet/domain/models/Champion.class
 pl/mroz/tau/mmopet/service/exceptions/ObjectDoesNotExistException.class
@@ -15,3 +16,5 @@ pl/mroz/tau/mmopet/service/ChampionService.class
 pl/mroz/tau/mmopet/repository/ChampionRepository.class
 pl/mroz/tau/mmopet/service/PetServiceImpl.class
 pl/mroz/tau/mmopet/domain/models/Model.class
+pl/mroz/tau/mmopet/configuration/RestInitializer.class
+pl/mroz/tau/mmopet/web/ChampionApi.class

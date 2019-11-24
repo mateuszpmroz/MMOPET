@@ -1,6 +1,5 @@
 package pl.mroz.tau.mmopet.bdd.impl.FriendList;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

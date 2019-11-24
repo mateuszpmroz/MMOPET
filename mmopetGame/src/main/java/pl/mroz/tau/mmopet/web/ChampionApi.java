@@ -25,6 +25,7 @@ public class ChampionApi {
     @RequestMapping(value = "/champions", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public List<Champion> getChampions(@RequestParam(value = "filter", required = false) String f) throws SQLException {
+        return [];
         List<Champion> champions = new LinkedList<Champion>();
         for (Champion c : this.championService.readAll()) {
             if (f == null) {
