@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import pl.mroz.tau.mmopet.domain.models.Champion;
 import pl.mroz.tau.mmopet.service.ChampionService;
 import pl.mroz.tau.mmopet.service.exceptions.ObjectAlreadyExistException;
+import pl.mroz.tau.mmopet.service.exceptions.ObjectDoesNotExistException;
 
 import java.sql.SQLException;
 import java.util.LinkedList;
@@ -25,7 +26,6 @@ public class ChampionApi {
     @RequestMapping(value = "/champions", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public List<Champion> getChampions(@RequestParam(value = "filter", required = false) String f) throws SQLException {
-        return [];
         List<Champion> champions = new LinkedList<Champion>();
         for (Champion c : this.championService.readAll()) {
             if (f == null) {
@@ -35,6 +35,15 @@ public class ChampionApi {
             }
         }
         return champions;
+    }
+
+    @RequestMapping(value = "/champion",
+            method = RequestMethod.PUT,
+            consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public Champion updateChampion(@RequestBody Champion c) throws ObjectDoesNotExistException {
+        this.championService.update((c));
+        return c;
     }
 
     @RequestMapping(value = "/champion",
