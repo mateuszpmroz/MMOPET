@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200109 16:01:23.288" generator="Robot 3.1.2 (Python 2.7.17 on linux2)">
+<suite source="/home/mateusz/Development/SQL/MMOPET/LAB6/Zad2/script.robot" id="s1" name="Script">
+<test id="s1-t1" name="Empty Test Case">
+<kw name="Run Program">
+<kw name="Recognize Figure" library="program">
+<arguments>
+<arg>1</arg>
+<arg>2</arg>
+<arg>3</arg>
+<arg>4</arg>
+</arguments>
+<status status="PASS" endtime="20200109 16:01:23.302" starttime="20200109 16:01:23.302"></status>
+</kw>
+<status status="PASS" endtime="20200109 16:01:23.302" starttime="20200109 16:01:23.301"></status>
+</kw>
+<status status="PASS" endtime="20200109 16:01:23.302" critical="yes" starttime="20200109 16:01:23.301"></status>
+</test>
+<status status="PASS" endtime="20200109 16:01:23.302" starttime="20200109 16:01:23.289"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Script" pass="1">Script</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
