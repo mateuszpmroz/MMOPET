@@ -8,32 +8,32 @@ def recognize_figure(sideA, sideB, sideC, sideD):
   sideD = int(sideD)
 
   if  sideA <= 0 or sideB <= 0 or sideC <= 0 or (sideD and sideD <= 0):
-    return "Bok nie może wynosić 0 lub mniej."
+    return "Bok nie moze wynosic 0 lub mniej"
 
   maxOfSides = max(sideA, sideB, sideC, sideD)
   sumOfSides = sideA + sideB + sideC + sideD
 
-  #Czworobok
+  # Quadrangle
   if (sideD):
     if sideA == sideB and sideB == sideC and sideC == sideD:
-      return "Kwadrat"
+      return "Square"
     
     if sideA == sideC and sideB == sideD:
-      return "Prostokąt"
+      return "Rectangle"
 
     if maxOfSides < (sumOfSides - maxOfSides):
-      return "Czworobok"
+      return "Quadrangle"
 
     return "Nierozpoznano"
 
   # Trojkąt
   if sideA == sideB == sideC:
-    return "Trojkąt równoboczny"
+    return "Trojkat rownoboczny"
 
   if sideA == sideB:
-    return "Trojkąt równoramienny"
+    return "Trojkat rownoramienny"
 
   if sideA + sideB > sideC and sideB + sideC > sideA and sideA + sideC > sideB:
-    return "Trójkąt różnoramienny"
+    return "Trójkat roznoramienny"
 
   return "Nierozpoznano"
