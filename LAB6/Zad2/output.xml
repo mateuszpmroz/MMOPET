@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20200109 17:03:20.414" generator="Robot 3.1.2 (Python 2.7.17 on linux2)">
+<robot rpa="false" generated="20200109 17:37:45.359" generator="Robot 3.1.2 (Python 2.7.17 on linux2)">
 <suite source="/home/mateusz/Development/SQL/MMOPET/LAB6/Zad2/script.robot" id="s1" name="Script">
 <test id="s1-t1" name="Square Recognize">
 <kw name="Check Figure">
@@ -20,8 +20,8 @@
 <assign>
 <var>${results}</var>
 </assign>
-<msg timestamp="20200109 17:03:20.429" level="INFO">${results} = Square</msg>
-<status status="PASS" endtime="20200109 17:03:20.429" starttime="20200109 17:03:20.429"></status>
+<msg timestamp="20200109 17:37:45.375" level="INFO">${results} = Square</msg>
+<status status="PASS" endtime="20200109 17:37:45.375" starttime="20200109 17:37:45.374"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -29,14 +29,14 @@
 <arg>${results}</arg>
 <arg>${word}</arg>
 </arguments>
-<msg timestamp="20200109 17:03:20.429" level="INFO">Argument types are:
+<msg timestamp="20200109 17:37:45.375" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200109 17:03:20.429" starttime="20200109 17:03:20.429"></status>
+<status status="PASS" endtime="20200109 17:37:45.375" starttime="20200109 17:37:45.375"></status>
 </kw>
-<status status="PASS" endtime="20200109 17:03:20.429" starttime="20200109 17:03:20.429"></status>
+<status status="PASS" endtime="20200109 17:37:45.375" starttime="20200109 17:37:45.374"></status>
 </kw>
-<status status="PASS" endtime="20200109 17:03:20.430" critical="yes" starttime="20200109 17:03:20.428"></status>
+<status status="PASS" endtime="20200109 17:37:45.375" critical="yes" starttime="20200109 17:37:45.374"></status>
 </test>
 <test id="s1-t2" name="Rectangle Recognize">
 <kw name="Check Figure">
@@ -57,8 +57,8 @@
 <assign>
 <var>${results}</var>
 </assign>
-<msg timestamp="20200109 17:03:20.431" level="INFO">${results} = Rectangle</msg>
-<status status="PASS" endtime="20200109 17:03:20.431" starttime="20200109 17:03:20.430"></status>
+<msg timestamp="20200109 17:37:45.376" level="INFO">${results} = Rectangle</msg>
+<status status="PASS" endtime="20200109 17:37:45.376" starttime="20200109 17:37:45.376"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -66,14 +66,14 @@
 <arg>${results}</arg>
 <arg>${word}</arg>
 </arguments>
-<msg timestamp="20200109 17:03:20.431" level="INFO">Argument types are:
+<msg timestamp="20200109 17:37:45.377" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200109 17:03:20.431" starttime="20200109 17:03:20.431"></status>
+<status status="PASS" endtime="20200109 17:37:45.377" starttime="20200109 17:37:45.376"></status>
 </kw>
-<status status="PASS" endtime="20200109 17:03:20.431" starttime="20200109 17:03:20.430"></status>
+<status status="PASS" endtime="20200109 17:37:45.377" starttime="20200109 17:37:45.376"></status>
 </kw>
-<status status="PASS" endtime="20200109 17:03:20.431" critical="yes" starttime="20200109 17:03:20.430"></status>
+<status status="PASS" endtime="20200109 17:37:45.377" critical="yes" starttime="20200109 17:37:45.375"></status>
 </test>
 <test id="s1-t3" name="Quadrangle Recognize">
 <kw name="Check Figure">
@@ -94,8 +94,8 @@
 <assign>
 <var>${results}</var>
 </assign>
-<msg timestamp="20200109 17:03:20.432" level="INFO">${results} = Quadrangle</msg>
-<status status="PASS" endtime="20200109 17:03:20.432" starttime="20200109 17:03:20.432"></status>
+<msg timestamp="20200109 17:37:45.378" level="INFO">${results} = Quadrangle</msg>
+<status status="PASS" endtime="20200109 17:37:45.378" starttime="20200109 17:37:45.377"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -103,14 +103,14 @@
 <arg>${results}</arg>
 <arg>${word}</arg>
 </arguments>
-<msg timestamp="20200109 17:03:20.432" level="INFO">Argument types are:
+<msg timestamp="20200109 17:37:45.378" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200109 17:03:20.432" starttime="20200109 17:03:20.432"></status>
+<status status="PASS" endtime="20200109 17:37:45.378" starttime="20200109 17:37:45.378"></status>
 </kw>
-<status status="PASS" endtime="20200109 17:03:20.433" starttime="20200109 17:03:20.432"></status>
+<status status="PASS" endtime="20200109 17:37:45.378" starttime="20200109 17:37:45.377"></status>
 </kw>
-<status status="PASS" endtime="20200109 17:03:20.433" critical="yes" starttime="20200109 17:03:20.431"></status>
+<status status="PASS" endtime="20200109 17:37:45.378" critical="yes" starttime="20200109 17:37:45.377"></status>
 </test>
 <test id="s1-t4" name="Unrecognized Quadrangle">
 <kw name="Check Figure">
@@ -131,8 +131,8 @@
 <assign>
 <var>${results}</var>
 </assign>
-<msg timestamp="20200109 17:03:20.434" level="INFO">${results} = Unrecognized</msg>
-<status status="PASS" endtime="20200109 17:03:20.434" starttime="20200109 17:03:20.433"></status>
+<msg timestamp="20200109 17:37:45.379" level="INFO">${results} = Unrecognized</msg>
+<status status="PASS" endtime="20200109 17:37:45.379" starttime="20200109 17:37:45.379"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -140,14 +140,14 @@
 <arg>${results}</arg>
 <arg>${word}</arg>
 </arguments>
-<msg timestamp="20200109 17:03:20.434" level="INFO">Argument types are:
+<msg timestamp="20200109 17:37:45.379" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200109 17:03:20.434" starttime="20200109 17:03:20.434"></status>
+<status status="PASS" endtime="20200109 17:37:45.380" starttime="20200109 17:37:45.379"></status>
 </kw>
-<status status="PASS" endtime="20200109 17:03:20.434" starttime="20200109 17:03:20.433"></status>
+<status status="PASS" endtime="20200109 17:37:45.380" starttime="20200109 17:37:45.379"></status>
 </kw>
-<status status="PASS" endtime="20200109 17:03:20.434" critical="yes" starttime="20200109 17:03:20.433"></status>
+<status status="PASS" endtime="20200109 17:37:45.380" critical="yes" starttime="20200109 17:37:45.378"></status>
 </test>
 <test id="s1-t5" name="Equilateral Triangle Recognize">
 <kw name="Check Figure">
@@ -168,8 +168,8 @@
 <assign>
 <var>${results}</var>
 </assign>
-<msg timestamp="20200109 17:03:20.435" level="INFO">${results} = Equilateral Triangle</msg>
-<status status="PASS" endtime="20200109 17:03:20.435" starttime="20200109 17:03:20.435"></status>
+<msg timestamp="20200109 17:37:45.381" level="INFO">${results} = Equilateral Triangle</msg>
+<status status="PASS" endtime="20200109 17:37:45.381" starttime="20200109 17:37:45.380"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -177,14 +177,14 @@
 <arg>${results}</arg>
 <arg>${word}</arg>
 </arguments>
-<msg timestamp="20200109 17:03:20.435" level="INFO">Argument types are:
+<msg timestamp="20200109 17:37:45.381" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200109 17:03:20.435" starttime="20200109 17:03:20.435"></status>
+<status status="PASS" endtime="20200109 17:37:45.381" starttime="20200109 17:37:45.381"></status>
 </kw>
-<status status="PASS" endtime="20200109 17:03:20.435" starttime="20200109 17:03:20.435"></status>
+<status status="PASS" endtime="20200109 17:37:45.381" starttime="20200109 17:37:45.380"></status>
 </kw>
-<status status="PASS" endtime="20200109 17:03:20.436" critical="yes" starttime="20200109 17:03:20.434"></status>
+<status status="PASS" endtime="20200109 17:37:45.381" critical="yes" starttime="20200109 17:37:45.380"></status>
 </test>
 <test id="s1-t6" name="Isosceles Triangle Recognize">
 <kw name="Check Figure">
@@ -205,8 +205,8 @@
 <assign>
 <var>${results}</var>
 </assign>
-<msg timestamp="20200109 17:03:20.436" level="INFO">${results} = Isosceles Triangle</msg>
-<status status="PASS" endtime="20200109 17:03:20.437" starttime="20200109 17:03:20.436"></status>
+<msg timestamp="20200109 17:37:45.382" level="INFO">${results} = Isosceles Triangle</msg>
+<status status="PASS" endtime="20200109 17:37:45.382" starttime="20200109 17:37:45.382"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -214,14 +214,14 @@
 <arg>${results}</arg>
 <arg>${word}</arg>
 </arguments>
-<msg timestamp="20200109 17:03:20.437" level="INFO">Argument types are:
+<msg timestamp="20200109 17:37:45.382" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200109 17:03:20.437" starttime="20200109 17:03:20.437"></status>
+<status status="PASS" endtime="20200109 17:37:45.382" starttime="20200109 17:37:45.382"></status>
 </kw>
-<status status="PASS" endtime="20200109 17:03:20.437" starttime="20200109 17:03:20.436"></status>
+<status status="PASS" endtime="20200109 17:37:45.383" starttime="20200109 17:37:45.382"></status>
 </kw>
-<status status="PASS" endtime="20200109 17:03:20.437" critical="yes" starttime="20200109 17:03:20.436"></status>
+<status status="PASS" endtime="20200109 17:37:45.383" critical="yes" starttime="20200109 17:37:45.381"></status>
 </test>
 <test id="s1-t7" name="Triangle Recognize">
 <kw name="Check Figure">
@@ -242,8 +242,8 @@
 <assign>
 <var>${results}</var>
 </assign>
-<msg timestamp="20200109 17:03:20.438" level="INFO">${results} = Triangle</msg>
-<status status="PASS" endtime="20200109 17:03:20.438" starttime="20200109 17:03:20.438"></status>
+<msg timestamp="20200109 17:37:45.384" level="INFO">${results} = Triangle</msg>
+<status status="PASS" endtime="20200109 17:37:45.384" starttime="20200109 17:37:45.383"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -251,14 +251,14 @@
 <arg>${results}</arg>
 <arg>${word}</arg>
 </arguments>
-<msg timestamp="20200109 17:03:20.438" level="INFO">Argument types are:
+<msg timestamp="20200109 17:37:45.384" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200109 17:03:20.438" starttime="20200109 17:03:20.438"></status>
+<status status="PASS" endtime="20200109 17:37:45.384" starttime="20200109 17:37:45.384"></status>
 </kw>
-<status status="PASS" endtime="20200109 17:03:20.438" starttime="20200109 17:03:20.438"></status>
+<status status="PASS" endtime="20200109 17:37:45.384" starttime="20200109 17:37:45.383"></status>
 </kw>
-<status status="PASS" endtime="20200109 17:03:20.439" critical="yes" starttime="20200109 17:03:20.437"></status>
+<status status="PASS" endtime="20200109 17:37:45.384" critical="yes" starttime="20200109 17:37:45.383"></status>
 </test>
 <test id="s1-t8" name="Unrecognized Triangle">
 <kw name="Check Figure">
@@ -279,8 +279,8 @@
 <assign>
 <var>${results}</var>
 </assign>
-<msg timestamp="20200109 17:03:20.440" level="INFO">${results} = Unrecognized</msg>
-<status status="PASS" endtime="20200109 17:03:20.440" starttime="20200109 17:03:20.440"></status>
+<msg timestamp="20200109 17:37:45.386" level="INFO">${results} = Unrecognized</msg>
+<status status="PASS" endtime="20200109 17:37:45.386" starttime="20200109 17:37:45.385"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -288,26 +288,63 @@
 <arg>${results}</arg>
 <arg>${word}</arg>
 </arguments>
-<msg timestamp="20200109 17:03:20.440" level="INFO">Argument types are:
+<msg timestamp="20200109 17:37:45.386" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20200109 17:03:20.440" starttime="20200109 17:03:20.440"></status>
+<status status="PASS" endtime="20200109 17:37:45.386" starttime="20200109 17:37:45.386"></status>
 </kw>
-<status status="PASS" endtime="20200109 17:03:20.440" starttime="20200109 17:03:20.439"></status>
+<status status="PASS" endtime="20200109 17:37:45.386" starttime="20200109 17:37:45.385"></status>
 </kw>
-<status status="PASS" endtime="20200109 17:03:20.440" critical="yes" starttime="20200109 17:03:20.439"></status>
+<status status="PASS" endtime="20200109 17:37:45.386" critical="yes" starttime="20200109 17:37:45.385"></status>
 </test>
-<status status="PASS" endtime="20200109 17:03:20.441" starttime="20200109 17:03:20.415"></status>
+<test id="s1-t9" name="Wrong Sides Length">
+<kw name="Check Figure">
+<arguments>
+<arg>Wrong Sides Length</arg>
+<arg>3</arg>
+<arg>-1</arg>
+<arg>5</arg>
+<arg>0</arg>
+</arguments>
+<kw name="Recognize Figure" library="program">
+<arguments>
+<arg>${sideA}</arg>
+<arg>${sideB}</arg>
+<arg>${sideC}</arg>
+<arg>${sideD}</arg>
+</arguments>
+<assign>
+<var>${results}</var>
+</assign>
+<msg timestamp="20200109 17:37:45.387" level="INFO">${results} = Wrong Sides Length</msg>
+<status status="PASS" endtime="20200109 17:37:45.387" starttime="20200109 17:37:45.387"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${results}</arg>
+<arg>${word}</arg>
+</arguments>
+<msg timestamp="20200109 17:37:45.388" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20200109 17:37:45.388" starttime="20200109 17:37:45.387"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:37:45.388" starttime="20200109 17:37:45.387"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:37:45.388" critical="yes" starttime="20200109 17:37:45.386"></status>
+</test>
+<status status="PASS" endtime="20200109 17:37:45.388" starttime="20200109 17:37:45.360"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="8">Critical Tests</stat>
-<stat fail="0" pass="8">All Tests</stat>
+<stat fail="0" pass="9">Critical Tests</stat>
+<stat fail="0" pass="9">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Script" pass="8">Script</stat>
+<stat fail="0" id="s1" name="Script" pass="9">Script</stat>
 </suite>
 </statistics>
 <errors>

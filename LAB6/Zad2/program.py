@@ -8,7 +8,7 @@ def recognize_figure(sideA, sideB, sideC, sideD):
   sideD = int(sideD)
 
   if  sideA <= 0 or sideB <= 0 or sideC <= 0 or (sideD and sideD <= 0):
-    return "Bok nie moze wynosic 0 lub mniej"
+    return "Wrong Sides Length"
 
   maxOfSides = max(sideA, sideB, sideC, sideD)
   sumOfSides = sideA + sideB + sideC + sideD

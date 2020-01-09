@@ -28,6 +28,9 @@ Triangle Recognize
 Unrecognized Triangle
   Check Figure  Unrecognized  3  7  61  0
 
+Wrong Sides Length
+  Check Figure  Wrong Sides Length  3  -1  5  0
+
 
 *** Keywords ***
 Check Figure
