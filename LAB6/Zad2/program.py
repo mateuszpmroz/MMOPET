@@ -24,16 +24,16 @@ def recognize_figure(sideA, sideB, sideC, sideD):
     if maxOfSides < (sumOfSides - maxOfSides):
       return "Quadrangle"
 
-    return "Nierozpoznano"
+    return "Unrecognized"
 
   # Trojkąt
   if sideA == sideB == sideC:
-    return "Trojkat rownoboczny"
+    return "Equilateral Triangle"
 
   if sideA == sideB:
-    return "Trojkat rownoramienny"
+    return "Isosceles Triangle"
 
   if sideA + sideB > sideC and sideB + sideC > sideA and sideA + sideC > sideB:
-    return "Trójkat roznoramienny"
+    return "Triangle"
 
-  return "Nierozpoznano"
+  return "Unrecognized"
