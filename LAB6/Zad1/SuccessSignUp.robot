@@ -6,48 +6,41 @@ ${BROWSER}   chrome
 ${SELSPEED}  0.0s
 
 *** Test Cases ***
-Failed SignUp
+Success SignUp
     [Setup]  Run Keywords  Open Browser  http://automationpractice.com/index.php  ${BROWSER}
     ...              AND   Set Selenium Speed  ${SELSPEED}
     # open    http://automationpractice.com/index.php
     click    link=Sign in
+    Wait Until Element Is Visible  email_create
     click    id=email_create
-    type    id=email_create    jdjycno@tlen.pl
-    click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email address'])[1]/following::span[1]
-    click    id=id_gender2
+    type    id=email_create    tttf3fdh6@tlen.pl
+    click    id=SubmitCreate
+    Wait Until Element Is Visible  id_gender1
+    click    id=id_gender1
     click    id=customer_firstname
-    type    id=customer_firstname    656
-    click    id=customer_lastname
-    type    id=customer_lastname    5655665
-    click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[4]/following::span[1]
-    click    id=passwd
-    click    id=passwd
-    doubleClick    id=passwd
-    type    id=passwd    444
-    click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='Create an account'])[1]/following::div[1]
-    select    id=days    regexp:3\s+
-    click    id=days
-    click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='Create an account'])[1]/following::div[1]
-    select    id=months    regexp:February\s
-    click    id=months
-    click    id=years
-    select    id=years    regexp:2016\s+
-    click    id=years
+    type    id=customer_firstname    test
+    type    id=customer_lastname    name
+    type    id=passwd    rrasf21
+    select    id=days    1
+    select    id=months    2
+    select    id=years    1999
     click    id=address1
-    type    id=address1    h
+    type    id=address1    kdkdk, mdmdm
+    click    id=address2
+    type    id=address2    20
     click    id=city
-    type    id=city    bbb
+    type    id=city    TestCity
     click    id=id_state
-    select    id=id_state    Kansas
+    select    id=id_state    3
     click    id=id_state
-    click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='Receive special offers from our partners!'])[1]/following::div[1]
     click    id=postcode
-    type    id=postcode    89-99
+    type    id=postcode    33212
+    click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='United States'])[1]/following::label[1]
+    click    id=other
     click    id=phone_mobile
-    type    id=phone_mobile    76657
+    type    id=phone_mobile    889221992
+    click    id=alias
     click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='DNI / NIF / NIE'])[1]/following::span[1]
-    click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='lastname'])[1]/following::li[1]
-    click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='Create an account'])[1]/following::div[1]
     [Teardown]  Close Browser
 
 *** Keywords ***
@@ -81,7 +74,7 @@ selectAndWait
 
 select
     [Arguments]        ${element}  ${value}
-    Select From List   ${element}  ${value}
+    Select From List by Value  ${element}  ${value}
 
 verifyValue
     [Arguments]                  ${element}  ${value}
