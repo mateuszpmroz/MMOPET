@@ -1,3 +1,5 @@
+// My script for my colegue
+
 
 const recognizeFigure = (sideA, sideB, sideC, sideD) => {
     if (typeof sideA !== 'number' || typeof sideB !== 'number' || typeof sideC != 'number' || (sideD && typeof sideD !== 'number')) {

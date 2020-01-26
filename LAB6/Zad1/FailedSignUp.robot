@@ -6,54 +6,51 @@ ${BROWSER}   chrome
 ${SELSPEED}  0.0s
 
 *** Test Cases ***
-Success SignUp
+Failed SignUp
     [Setup]  Run Keywords  Open Browser  http://automationpractice.com/index.php  ${BROWSER}
     ...              AND   Set Selenium Speed  ${SELSPEED}
     # open    http://automationpractice.com/index.php
     click    link=Sign in
+    Wait Until Element Is Visible  email_create
     click    id=email_create
-    type    id=email_create    tttffdh6@tlen.pl
-    click    id=SubmitCreate
-    click    id=id_gender1
+    type    id=email_create    jdjydc3no@tlen.pl
+    click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email address'])[1]/following::span[1]
+    Wait Until Element Is Visible  id_gender2
+    click    id=id_gender2
     click    id=customer_firstname
-    type    id=customer_firstname    test
-    type    id=customer_lastname    name
-    type    id=passwd    rrasf21
-    select    id=days    regexp:1\s+
-    select    id=months    regexp:January\s
-    select    id=years    regexp:2020\s+
-    select    id=years    regexp:2019\s+
-    select    id=years    regexp:2018\s+
-    select    id=years    regexp:2017\s+
-    select    id=years    regexp:2016\s+
-    select    id=years    regexp:2015\s+
-    select    id=years    regexp:2014\s+
-    select    id=years    regexp:2013\s+
-    select    id=years    regexp:2012\s+
-    select    id=years    regexp:2011\s+
-    select    id=years    regexp:2010\s+
-    select    id=years    regexp:2009\s+
-    select    id=years    regexp:2008\s+
-    select    id=years    regexp:2007\s+
-    select    id=years    regexp:2006\s+
-    select    id=years    regexp:2005\s+
+    type    id=customer_firstname    656
+    click    id=customer_lastname
+    type    id=customer_lastname    5655665
+    click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[4]/following::span[1]
+    click    id=passwd
+    click    id=passwd
+    doubleClick    id=passwd
+    type    id=passwd    444
+    Wait Until Element Is Visible  xpath=(.//*[normalize-space(text()) and normalize-space(.)='Create an account'])[1]/following::div[1]
+    click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='Create an account'])[1]/following::div[1]
+    select    id=days    3
+    click    id=days
+    click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='Create an account'])[1]/following::div[1]
+    select    id=months    2
+    click    id=months
+    click    id=years
+    select    id=years    2016
+    click    id=years
     click    id=address1
-    type    id=address1    kdkdk, mdmdm
-    click    id=address2
-    type    id=address2    20
+    type    id=address1    h
     click    id=city
-    type    id=city    TestCity
+    type    id=city    bbb
     click    id=id_state
-    select    id=id_state    Indiana
+    select    id=id_state    3
     click    id=id_state
+    click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='Receive special offers from our partners!'])[1]/following::div[1]
     click    id=postcode
-    type    id=postcode    33212
-    click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='United States'])[1]/following::label[1]
-    click    id=other
+    type    id=postcode    89-99
     click    id=phone_mobile
-    type    id=phone_mobile    889221992
-    click    id=alias
+    type    id=phone_mobile    76657
     click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='DNI / NIF / NIE'])[1]/following::span[1]
+    click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='lastname'])[1]/following::li[1]
+    click    xpath=(.//*[normalize-space(text()) and normalize-space(.)='Create an account'])[1]/following::div[1]
     [Teardown]  Close Browser
 
 *** Keywords ***
@@ -87,7 +84,7 @@ selectAndWait
 
 select
     [Arguments]        ${element}  ${value}
-    Select From List   ${element}  ${value}
+    Select From List by Value   ${element}  ${value}
 
 verifyValue
     [Arguments]                  ${element}  ${value}

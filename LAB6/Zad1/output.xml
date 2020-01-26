@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200109 17:34:36.174" generator="Robot 3.1.2 (Python 2.7.17 on linux2)">
+<suite source="/home/mateusz/Development/SQL/MMOPET/LAB6/Zad1/SuccessSignUp.robot" id="s1" name="SuccessSignUp">
+<test id="s1-t1" name="Success SignUp">
+<kw type="setup" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Open Browser</arg>
+<arg>http://automationpractice.com/index.php</arg>
+<arg>${BROWSER}</arg>
+<arg>AND</arg>
+<arg>Set Selenium Speed</arg>
+<arg>${SELSPEED}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://automationpractice.com/index.php</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:36.250" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" endtime="20200109 17:34:41.097" starttime="20200109 17:34:36.250"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${SELSPEED}</arg>
+</arguments>
+<status status="PASS" endtime="20200109 17:34:41.097" starttime="20200109 17:34:41.097"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:41.098" starttime="20200109 17:34:36.249"></status>
+</kw>
+<kw name="click">
+<arguments>
+<arg>link=Sign in</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:41.098" level="INFO">Clicking element 'link=Sign in'.</msg>
+<status status="PASS" endtime="20200109 17:34:42.538" starttime="20200109 17:34:41.098"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:42.538" starttime="20200109 17:34:41.098"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>email_create</arg>
+</arguments>
+<status status="PASS" endtime="20200109 17:34:43.027" starttime="20200109 17:34:42.538"></status>
+</kw>
+<kw name="click">
+<arguments>
+<arg>id=email_create</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:43.028" level="INFO">Clicking element 'id=email_create'.</msg>
+<status status="PASS" endtime="20200109 17:34:43.092" starttime="20200109 17:34:43.028"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:43.092" starttime="20200109 17:34:43.027"></status>
+</kw>
+<kw name="type">
+<arguments>
+<arg>id=email_create</arg>
+<arg>tttffdh6@tlen.pl</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:43.093" level="INFO">Typing text 'tttffdh6@tlen.pl' into text field 'id=email_create'.</msg>
+<status status="PASS" endtime="20200109 17:34:43.178" starttime="20200109 17:34:43.093"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:43.178" starttime="20200109 17:34:43.092"></status>
+</kw>
+<kw name="click">
+<arguments>
+<arg>id=SubmitCreate</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:43.179" level="INFO">Clicking element 'id=SubmitCreate'.</msg>
+<status status="PASS" endtime="20200109 17:34:43.238" starttime="20200109 17:34:43.179"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:43.238" starttime="20200109 17:34:43.178"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>id_gender1</arg>
+</arguments>
+<status status="PASS" endtime="20200109 17:34:44.626" starttime="20200109 17:34:43.238"></status>
+</kw>
+<kw name="click">
+<arguments>
+<arg>id=id_gender1</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:44.628" level="INFO">Clicking element 'id=id_gender1'.</msg>
+<status status="PASS" endtime="20200109 17:34:44.713" starttime="20200109 17:34:44.627"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:44.713" starttime="20200109 17:34:44.627"></status>
+</kw>
+<kw name="click">
+<arguments>
+<arg>id=customer_firstname</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:44.714" level="INFO">Clicking element 'id=customer_firstname'.</msg>
+<status status="PASS" endtime="20200109 17:34:44.778" starttime="20200109 17:34:44.714"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:44.778" starttime="20200109 17:34:44.713"></status>
+</kw>
+<kw name="type">
+<arguments>
+<arg>id=customer_firstname</arg>
+<arg>test</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:44.778" level="INFO">Typing text 'test' into text field 'id=customer_firstname'.</msg>
+<status status="PASS" endtime="20200109 17:34:44.839" starttime="20200109 17:34:44.778"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:44.839" starttime="20200109 17:34:44.778"></status>
+</kw>
+<kw name="type">
+<arguments>
+<arg>id=customer_lastname</arg>
+<arg>name</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:44.840" level="INFO">Typing text 'name' into text field 'id=customer_lastname'.</msg>
+<status status="PASS" endtime="20200109 17:34:44.920" starttime="20200109 17:34:44.839"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:44.920" starttime="20200109 17:34:44.839"></status>
+</kw>
+<kw name="type">
+<arguments>
+<arg>id=passwd</arg>
+<arg>rrasf21</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:44.921" level="INFO">Typing text 'rrasf21' into text field 'id=passwd'.</msg>
+<status status="PASS" endtime="20200109 17:34:45.009" starttime="20200109 17:34:44.921"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:45.009" starttime="20200109 17:34:44.920"></status>
+</kw>
+<kw name="select">
+<arguments>
+<arg>id=days</arg>
+<arg>1</arg>
+</arguments>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:45.010" level="INFO">Selecting options from selection list 'id=days' by value 1.</msg>
+<status status="PASS" endtime="20200109 17:34:45.131" starttime="20200109 17:34:45.010"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:45.131" starttime="20200109 17:34:45.010"></status>
+</kw>
+<kw name="select">
+<arguments>
+<arg>id=months</arg>
+<arg>2</arg>
+</arguments>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:45.132" level="INFO">Selecting options from selection list 'id=months' by value 2.</msg>
+<status status="PASS" endtime="20200109 17:34:45.206" starttime="20200109 17:34:45.131"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:45.206" starttime="20200109 17:34:45.131"></status>
+</kw>
+<kw name="select">
+<arguments>
+<arg>id=years</arg>
+<arg>1999</arg>
+</arguments>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:45.207" level="INFO">Selecting options from selection list 'id=years' by value 1999.</msg>
+<status status="PASS" endtime="20200109 17:34:45.277" starttime="20200109 17:34:45.207"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:45.277" starttime="20200109 17:34:45.206"></status>
+</kw>
+<kw name="click">
+<arguments>
+<arg>id=address1</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:45.278" level="INFO">Clicking element 'id=address1'.</msg>
+<status status="PASS" endtime="20200109 17:34:45.335" starttime="20200109 17:34:45.278"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:45.335" starttime="20200109 17:34:45.277"></status>
+</kw>
+<kw name="type">
+<arguments>
+<arg>id=address1</arg>
+<arg>kdkdk, mdmdm</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:45.336" level="INFO">Typing text 'kdkdk, mdmdm' into text field 'id=address1'.</msg>
+<status status="PASS" endtime="20200109 17:34:45.424" starttime="20200109 17:34:45.336"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:45.424" starttime="20200109 17:34:45.335"></status>
+</kw>
+<kw name="click">
+<arguments>
+<arg>id=address2</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:45.425" level="INFO">Clicking element 'id=address2'.</msg>
+<status status="PASS" endtime="20200109 17:34:45.476" starttime="20200109 17:34:45.425"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:45.476" starttime="20200109 17:34:45.424"></status>
+</kw>
+<kw name="type">
+<arguments>
+<arg>id=address2</arg>
+<arg>20</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:45.477" level="INFO">Typing text '20' into text field 'id=address2'.</msg>
+<status status="PASS" endtime="20200109 17:34:45.525" starttime="20200109 17:34:45.476"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:45.525" starttime="20200109 17:34:45.476"></status>
+</kw>
+<kw name="click">
+<arguments>
+<arg>id=city</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:45.525" level="INFO">Clicking element 'id=city'.</msg>
+<status status="PASS" endtime="20200109 17:34:45.591" starttime="20200109 17:34:45.525"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:45.592" starttime="20200109 17:34:45.525"></status>
+</kw>
+<kw name="type">
+<arguments>
+<arg>id=city</arg>
+<arg>TestCity</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:45.592" level="INFO">Typing text 'TestCity' into text field 'id=city'.</msg>
+<status status="PASS" endtime="20200109 17:34:45.668" starttime="20200109 17:34:45.592"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:45.668" starttime="20200109 17:34:45.592"></status>
+</kw>
+<kw name="click">
+<arguments>
+<arg>id=id_state</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:45.669" level="INFO">Clicking element 'id=id_state'.</msg>
+<status status="PASS" endtime="20200109 17:34:45.747" starttime="20200109 17:34:45.669"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:45.747" starttime="20200109 17:34:45.668"></status>
+</kw>
+<kw name="select">
+<arguments>
+<arg>id=id_state</arg>
+<arg>3</arg>
+</arguments>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:45.748" level="INFO">Selecting options from selection list 'id=id_state' by value 3.</msg>
+<status status="PASS" endtime="20200109 17:34:45.839" starttime="20200109 17:34:45.748"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:45.840" starttime="20200109 17:34:45.747"></status>
+</kw>
+<kw name="click">
+<arguments>
+<arg>id=id_state</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:45.840" level="INFO">Clicking element 'id=id_state'.</msg>
+<status status="PASS" endtime="20200109 17:34:45.944" starttime="20200109 17:34:45.840"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:45.944" starttime="20200109 17:34:45.840"></status>
+</kw>
+<kw name="click">
+<arguments>
+<arg>id=postcode</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:45.945" level="INFO">Clicking element 'id=postcode'.</msg>
+<status status="PASS" endtime="20200109 17:34:46.014" starttime="20200109 17:34:45.945"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:46.014" starttime="20200109 17:34:45.945"></status>
+</kw>
+<kw name="type">
+<arguments>
+<arg>id=postcode</arg>
+<arg>33212</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:46.015" level="INFO">Typing text '33212' into text field 'id=postcode'.</msg>
+<status status="PASS" endtime="20200109 17:34:46.088" starttime="20200109 17:34:46.015"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:46.088" starttime="20200109 17:34:46.014"></status>
+</kw>
+<kw name="click">
+<arguments>
+<arg>xpath=(.//*[normalize-space(text()) and normalize-space(.)='United States'])[1]/following::label[1]</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:46.089" level="INFO">Clicking element 'xpath=(.//*[normalize-space(text()) and normalize-space(.)='United States'])[1]/following::label[1]'.</msg>
+<status status="PASS" endtime="20200109 17:34:46.169" starttime="20200109 17:34:46.088"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:46.170" starttime="20200109 17:34:46.088"></status>
+</kw>
+<kw name="click">
+<arguments>
+<arg>id=other</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:46.171" level="INFO">Clicking element 'id=other'.</msg>
+<status status="PASS" endtime="20200109 17:34:46.222" starttime="20200109 17:34:46.170"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:46.222" starttime="20200109 17:34:46.170"></status>
+</kw>
+<kw name="click">
+<arguments>
+<arg>id=phone_mobile</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:46.223" level="INFO">Clicking element 'id=phone_mobile'.</msg>
+<status status="PASS" endtime="20200109 17:34:46.273" starttime="20200109 17:34:46.223"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:46.273" starttime="20200109 17:34:46.222"></status>
+</kw>
+<kw name="type">
+<arguments>
+<arg>id=phone_mobile</arg>
+<arg>889221992</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:46.274" level="INFO">Typing text '889221992' into text field 'id=phone_mobile'.</msg>
+<status status="PASS" endtime="20200109 17:34:46.344" starttime="20200109 17:34:46.273"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:46.345" starttime="20200109 17:34:46.273"></status>
+</kw>
+<kw name="click">
+<arguments>
+<arg>id=alias</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:46.345" level="INFO">Clicking element 'id=alias'.</msg>
+<status status="PASS" endtime="20200109 17:34:46.407" starttime="20200109 17:34:46.345"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:46.408" starttime="20200109 17:34:46.345"></status>
+</kw>
+<kw name="click">
+<arguments>
+<arg>xpath=(.//*[normalize-space(text()) and normalize-space(.)='DNI / NIF / NIE'])[1]/following::span[1]</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20200109 17:34:46.408" level="INFO">Clicking element 'xpath=(.//*[normalize-space(text()) and normalize-space(.)='DNI / NIF / NIE'])[1]/following::span[1]'.</msg>
+<status status="PASS" endtime="20200109 17:34:48.283" starttime="20200109 17:34:46.408"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:48.283" starttime="20200109 17:34:46.408"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200109 17:34:48.340" starttime="20200109 17:34:48.283"></status>
+</kw>
+<status status="PASS" endtime="20200109 17:34:48.341" critical="yes" starttime="20200109 17:34:36.249"></status>
+</test>
+<status status="PASS" endtime="20200109 17:34:48.341" starttime="20200109 17:34:36.175"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="SuccessSignUp" pass="1">SuccessSignUp</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
